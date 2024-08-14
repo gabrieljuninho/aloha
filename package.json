@@ -13,6 +13,7 @@
     "check-types": "tsc --pretty --noEmit"
   },
   "dependencies": {
+    "@auth/prisma-adapter": "^2.4.2",
     "@hookform/resolvers": "^3.9.0",
     "@prisma/client": "^5.18.0",
     "@radix-ui/react-label": "^2.1.0",
@@ -24,6 +25,7 @@
     "geist": "^1.3.1",
     "lucide-react": "^0.427.0",
     "next": "14.2.5",
+    "next-auth": "^5.0.0-beta.20",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.52.2",

@@ -59,7 +59,7 @@ const AuthLayout: FC<IAuthLayoutProps> = ({
         <p className="text-center text-[0.938rem] font-normal leading-tight sm:leading-normal">
           {backButtonLabel}{" "}
           <Link href={backButtonHref} className="text-link hover:underline">
-            {type === "Sign up" ? "Log in" : "Create account"}
+            {type === "Sign up" ? "Log in" : "Create an account"}
           </Link>
           .
         </p>

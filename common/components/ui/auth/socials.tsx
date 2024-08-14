@@ -1,11 +1,21 @@
 "use client";
 
+import { useSearchParams } from "next/navigation";
+
+import { signIn } from "next-auth/react";
 import { FcGoogle } from "react-icons/fc";
 
 import { Button } from "@/components/ui/button";
 
+import { DEFAULT_LOGIN_REDIRECT } from "@/routes";
+
 const Socials = () => {
-  const handleClick = (provider: "google") => {};
+  const urlParams = useSearchParams();
+  const callBackUrl = urlParams.get("callbackUrl");
+
+  const handleClick = (provider: "google") => {
+    signIn(provider), { callbackUrl: callBackUrl || DEFAULT_LOGIN_REDIRECT };
+  };
 
   return (
     <Button

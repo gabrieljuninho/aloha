@@ -9,3 +9,12 @@ export const RegisterSchema = z.object({
     .string()
     .min(6, { message: "Password must be at least 6 characters" }),
 });
+
+export const LoginSchema = z.object({
+  email: z
+    .string({
+      invalid_type_error: "Must be a string",
+    })
+    .email({ message: "Invalid email" }),
+  password: z.string().min(1, { message: "Password is required" }),
+});
