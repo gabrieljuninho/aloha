@@ -63,6 +63,7 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        link: "var(--link-color)",
       },
       fontFamily: {
         geist: ["var(--font-geist-sans)", ...fontFamily.sans],

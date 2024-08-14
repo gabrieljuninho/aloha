@@ -60,8 +60,19 @@
 }
 
 @layer base {
+  :root {
+    --link-color: hsl(221.2 83.2% 53.3%);
+  }
+}
+
+@layer base {
   * {
     @apply border-border;
+  }
+
+  html,
+  body {
+    @apply h-full w-full;
   }
 
   body {
